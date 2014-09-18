@@ -86,7 +86,7 @@ LS_CMD="ls $LS_COLOR -Fh"
 
 alias ls="$LS_CMD"
 
-# List direcory contents
+# List directory contents
 alias lsa="$LS_CMD -la"
 alias l="$LS_CMD -la"
 alias ll="$LS_CMD -l"
@@ -107,6 +107,10 @@ export EDITOR=vim
 
 alias pelilabra="ssh root@pelilabra.net -t 'screen -DRU'"
 alias hp1="ssh hp1 -t 'tmux attach || tmux'"
+
+# Show/Hide hidden files/directories
+alias showdot="defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder"
+alias hidedot="defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder"
 
 pre_path '/Applications/MAMP/bin/php/php5.4.10/bin'
 
