@@ -1,6 +1,6 @@
 [user]
-	name = Jyrki Lilja
-	email = jyrki.lilja@outlook.com
+	name = Joni Ahola
+	email = joni@juotos.fi
 [color]
 	diff = auto
 	status = auto
@@ -9,7 +9,7 @@
 	autocrlf = input
 	savecrlf = true
 	editor = vim
-	excludesfile = /Users/jyrkililja/.gitignore_global
+	excludesfile = /Users/joni/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
