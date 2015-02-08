@@ -26,3 +26,4 @@
 	ignore = !git update-index --assume-unchanged
 	unignore = !git update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep ^[a-z]
+	safe-merge = merge --no-commit --no-ff
