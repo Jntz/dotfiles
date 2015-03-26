@@ -98,6 +98,16 @@ function chpwd() {
     ls
 }
 
+
+function nbopen {
+    if test -z "$1"
+    then
+      echo "usage: nbopen [file]"
+    else
+      open /Applications/NetBeans/NetBeans\ 8.0.1.app && /Applications/NetBeans/NetBeans\ 8.0.1.app/Contents/MacOS/netbeans --open $1
+    fi
+}
+
 export EDITOR=vim
 
 # A way to get IP addresses {
