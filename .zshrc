@@ -91,6 +91,7 @@ alias lsa="$LS_CMD -la"
 alias l="$LS_CMD -la"
 alias ll="$LS_CMD -l"
 alias sl="$LS_CMD" # often screw this up
+eval "$(thefuck --alias)"
 
 # List directory contents after a 'cd'
 function chpwd() {
@@ -131,3 +132,10 @@ export PATH
 export RUBYOPT=-Ku
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH::/usr/local/Cellar/ansible/1.7.2/bin/"
+
+export NVM_DIR="/Users/joni/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:/Users/joni/Development/mongodb/bin" #mongodb
+alias gm="/usr/local/Cellar/graphicsmagick/1.3.24/bin/gm" #GraphicsMagick
